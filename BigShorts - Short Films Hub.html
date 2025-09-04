@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/index.html#films -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigShorts - Short Films Hub</title>
+  
+<link rel="stylesheet" href="./BigShorts - Short Films Hub_files/style.css"></head>
+<body>
+
+  <header>
+    <div class="logo">🎬 BigShorts</div>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html#films">Films</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#creators">Creators</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#join">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero visible" style="opacity: 0; transition: opacity 0.8s ease-out;">
+    <h1>Discover Bold Stories in Short Films</h1>
+    <p>Explore, stream, and support original short films by talented creators around the world.</p>
+    <a href="http://127.0.0.1:5500/index.html#films" class="btn">Browse Films</a>
+  </section>
+
+  <section id="films" class="films visible" style="opacity: 0; transition: opacity 0.8s ease-out;">
+    <h2>Featured Shorts</h2>
+    <div class="film-grid">
+      <div class="film-card">
+        <img src="./BigShorts - Short Films Hub_files/saved_resource" alt="Short Film 1">
+        <h3>Whispers in the Wind</h3>
+      </div>
+      <div class="film-card">
+        <img src="./BigShorts - Short Films Hub_files/saved_resource(1)" alt="Short Film 2">
+        <h3>Through Her Eyes</h3>
+      </div>
+      <div class="film-card">
+        <img src="./BigShorts - Short Films Hub_files/saved_resource(2)" alt="Short Film 3">
+        <h3>Midnight Echo</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="creators" class="creators visible" style="opacity: 0; transition: opacity 0.8s ease-out;">
+    <h2>Meet the Creators</h2>
+    <p>Get inspired by the filmmakers shaping tomorrow’s cinema.</p>
+  </section>
+
+  <section id="about" class="about visible" style="opacity: 0; transition: opacity 0.8s ease-out;">
+    <h2>About BigShorts</h2>
+    <p>BigShorts is a community-driven platform designed to elevate short-form storytelling and give indie creators the spotlight they deserve.</p>
+  </section>
+
+  <section id="join" class="join visible" style="opacity: 0; transition: opacity 0.8s ease-out;">
+    <h2>Join BigShorts</h2>
+    <p>Are you a filmmaker with a story to tell? Join our creator network and share your shorts with the world.</p>
+    <a href="http://127.0.0.1:5500/index.html#" class="btn">Get Started</a>
+  </section>
+
+  <footer>
+    <p>© 2025 BigShorts. All rights reserved.</p>
+  </footer>
+
+  <script src="./BigShorts - Short Films Hub_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

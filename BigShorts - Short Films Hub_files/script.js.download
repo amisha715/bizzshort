@@ -1,0 +1,24 @@
+// Scroll animation (simple fade-in)
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight / 1.2;
+
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < triggerBottom) {
+      section.classList.add('visible');
+    }
+  });
+});
+
+// Optional: Add class styling
+document.querySelectorAll('section').forEach(section => {
+  section.style.opacity = 0;
+  section.style.transition = 'opacity 0.8s ease-out';
+});
+
+document.querySelectorAll('section.visible').forEach(section => {
+  section.style.opacity = 1;
+});
